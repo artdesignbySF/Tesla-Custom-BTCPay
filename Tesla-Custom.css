@@ -1,0 +1,673 @@
+
+/*==============================CREDITS=============================*/
+/*  Custom BTCpay Server CSS template made by @artdesignbySF        */
+/*  for Tesla at https://tesla.com                                 */
+/*  and @elonmusk on Twitter                                      */
+/*============================END CREDITS===========================*/
+
+/*============================DISCLAIMER============================*/
+/*  Might not be the most efficient or correct way of implementing  */
+/*  CSS. I am not responsable for breaking your website if things   */
+/*  go wrong. PEACE / LOVE / BITCOIN                                */
+/*==========================END DISCLAIMER==========================*/
+
+/*====== General Stuff ======*/
+
+body {
+    font-family: Gotham Book,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #333;
+    font-weight: 400;
+}
+
+
+html {
+    background-color: #fff;
+}
+
+.modal.page {
+    background-color: #fff;
+}
+
+.modal-content.long{
+    background-color: #fff;
+    border-radius: 0px; /*===ROUNDED CORNERS===*/
+    box-shadow: 0px 0px 0px 0px #fff;    /*===OUTSIDE SHADOW===*/
+    border-radius: 0px 0px 20px 20px;
+}
+
+/*====== Header Stuff ======*/
+
+.top-header .header__iconcentered {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 360;
+    height: 50px;
+    margin: 10px auto 0px;
+}
+
+.header__iconcentered__img {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(BTCpay-Header-720x120px.png) no-repeat;
+    background-size: 360px 60px;
+    width: 360px;
+    height: 60px;
+    padding-left: 360px; /* Must be equal to width */
+    margin-left:-130px;
+    margin-top:-10px;
+}
+/* eof */
+
+.top-header {
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+.header {
+    background-color: none;
+}
+
+/*====== Timer Stuff ======*/
+
+.top-header .timer-row {
+    height: 30px;
+    background-color: #fff; /*===PROGRESS BAR BACKGROUND COLOR===*/
+}
+
+.top-header .timer-row__progress-bar {
+    margin-top: 27px;
+    margin-left: 21px;
+    max-width: 87.5%;
+    border-radius: 0px;
+    height: 3px;
+    background:  linear-gradient(30deg, #cc0000, #cc0000);      /*===PROGRESS BAR COLOR===*/
+}
+
+.top-header .timer-row__spinner svg { 
+    width:11px;
+    margin-top:1px;
+    margin-left:15px;
+    fill:#cc0000;
+}
+
+.top-header .timer-row.expiring-soon {
+    background: #fff;
+}
+
+.invoice {
+    background-color:none; /* messes up bottom border radius */
+}
+
+.vex.vex-theme-btcpay .vex-content {
+    color: #fff;
+    background-color: #fff;
+}
+
+.vex.vex-theme-btcpay .vex-content .vexmenuitem {
+    border-bottom-color: #8f979e;
+}
+
+.vex.vex-theme-btcpay .vex-content .vexmenuitem:hover {
+    background-color: #292929;
+}
+
+.vex.vex-theme-btcpay .vex-content a {
+    color: inherit;
+}
+
+.expired__body,
+.success-message {
+    color: #fff;
+}
+
+line-items .line-items__item {
+    color: #8D8D8F;
+}
+
+/*=====CURRENCY DROPDOWN=====*/
+.currency-selection { /*===NOT THE DROP DOWN MENU===*/
+    background: #000;   /*===BACKGROUND COLOR===*/
+    border-bottom: 3px solid #fff;
+    color: #fff; /*===TEXT COLOR===*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    border-radius: 20px 20px 0 0px;
+}
+
+.payment__currencies {
+    background-image: linear-gradient(30deg, #000, #000); 
+    border: 3px solid #fff;
+    padding:7px;
+    border-radius: 20px; /*===ROUNDED CORNER SETTINGS===*/
+}
+
+.payment__currencies:hover {
+    background-image: linear-gradient(30deg, #fff, #fff); 
+    border: 3px solid #fff;
+    padding:7px;
+    border-radius: 20px; /*===ROUNDED CORNER SETTINGS===*/
+
+}
+
+.payment__currencies:hover > span {
+    color: #000; /*===TEXT HOVER HIGHLIGHT COLOR===*/
+    border:0px;
+}
+
+
+.payment__currencies > span {
+    color: #fff; /*===MENU HOVER HIGHLIGHT COLOR===*/
+}
+
+.payment__currencies_noborder {
+    background-image: linear-gradient(30deg, #EF820D, #EF820D); 
+    border:0px solid #666;
+    border-radius: 6px; /*===ROUNDED CORNER SETTINGS===*/
+    margin-left:140px;
+    padding:10px;
+}
+/*===Circle around bitcoin logo===*/
+.payment__currencies img, .payment__currencies_noborder img, .vexmenuitem a img {
+    border: 0px solid #fff;
+    border-radius: 0px;
+}
+
+.vex.vex-theme-btcpay .vex-content  {
+    background:#fff;
+    border-radius: 6px; /*===ROUNDED CORNER SETTINGS===*/
+    outline: 0px solid #fff;
+    box-shadow: 0px 0px 0px 0px #010101; /*===DROP SHADOW SETTINGS===*/
+}
+
+.vexmenuitem  {
+    background-color: #fff;
+    border-radius: 6px;
+    border-bottom: 0px;
+}
+
+.vex-content:hover {
+    border: 0px;
+}
+
+.vexmenuitem:hover {
+    color: #fff;    /*===MENU TEXT COLOR===*/
+    background-image: linear-gradient(30deg, #fff, #fff);     /*===MENU BACKGROUND COLOR===*/
+    border-radius: 6px;
+}
+
+.vexmenuitem > a {
+    margin-left:5px;
+    margin-right:5px;
+    color: #fff; /*===MENU TEXT COLOR===*/
+    text-shadow: 0px 0px 0px #fff;
+}
+
+.vexmenuitem:hover > a {
+    margin-left:5px;
+    margin-right:5px;
+    color: #fff;    /*===MENU TEXT COLOR===*/
+}
+
+.vexmenuitem > span {
+    color: #fff; /*===MENU TEXT COLOR===*/
+    text-shadow: 0px 0px 0px #fff;
+}
+
+.vexmenuitem:hover > span {
+    color: #fff;    /*===MENU TEXT COLOR===*/
+    text-shadow: 0px 0px 0px #fff;
+}
+
+.vexmenuitem > a span {
+    color: #fff; /*===MENU TEXT COLOR===*/
+    text-shadow: 0px 0px 0px #fff;
+}
+
+.vexmenuitem:hover > a span {
+    color: #fff;    /*===MENU TEXT COLOR===*/
+    text-shadow: 0px 0px 0px #fff;
+}
+/*===========================*/
+
+/*=====PAY WITH / AMOUNTS=====*/
+.buyerTotalLine {
+    background-color: #000;
+    color: #fff;     /*===TEXT COLOR===*/
+    border-radius: 0px 0px 0px 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.line-items {
+    background-image: linear-gradient(30deg, #cc0000, #cc0000); /*===BACKGROUND COLOR===*/
+    color: #fff !important;     /*===TEXT COLOR===*/
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+/*================fff==========*/
+
+/*=======PAYMENT TABS=======*/
+
+.payment-tabs {
+    background: fff; /*===BACKGROUND COLOR===*/
+    border-top:0px solid #666;  /*===COLORED LINE ABOVE PAYMENT TABS===*/
+/*  border-bottom: 1px solid #010101;   /*===COLORED LINE BELOW PAYMENT TABS===*/
+
+    text-transform: uppercase;
+    font-size:12px;
+
+}
+
+.payment-tabs__slider {
+    background-image: linear-gradient(to left, #3e6ae1, #3e6ae1);   /*===SLIDER COLOR===*/
+    height: 5px;
+    margin-bottom: 37px;
+    border-radius: 0px;
+}
+
+.payment-tabs__tab { 
+    background-image: linear-gradient(to right, #eeeeee, #eeeeee);/*===TAB BACKGROUND ON HOVER===*/
+    border-radius: 0px 0px 0px 0px;
+    border-top: 0px solid #000;
+}
+
+.payment-tabs__tab.active  {
+    background:#000; /*===TEXT BACKGROUND ON ACTIVE TAB===*/
+    text-transform: uppercase;
+    border-left: 0px solid #fff;
+        border-right: 0px solid #fff;
+            border-bottom: 0px solid #fff;
+}
+
+.payment-tabs__tab.active:hover {
+    background-image: linear-gradient(to left, #000, #000); /*===TEXT BACKGROUND ON ACTIVE TAB===*/
+    text-transform: uppercase;
+}
+
+.payment-tabs__tab.active:hover >span {
+    color:#fff; /*===TEXT BACKGROUND ON ACTIVE TAB===*/
+    text-transform: uppercase;
+}
+
+.payment-tabs__tab:hover > span {
+    color:#000; /*===TEXT BACKGROUND ON HOVER===*/
+
+    text-transform: uppercase;
+}
+
+.payment-tabs__tab.active > span  {
+    color: #fff; /*===TEXT BACKGROUND ON HOVER===*/
+}
+
+.payment-tabs__tab > span  {
+    color: #000; /*===TEXT BACKGROUND ON HOVER===*/
+}
+/*===========================*/
+
+/*===OPEN IN WALLET BUTTON===*/
+.action-button {
+    text-transform: uppercase;
+    background-image: linear-gradient(30deg, #000, #000);     /*===BUTTON BACKGROUND COLOR GRADIENT===*/
+    color: #fff;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius:20px;
+    padding: 12px;
+    word-break: normal;
+    font-size: 13px;
+    min-width: 185px;
+    font-weight: 300;
+    letter-spacing: .7px;
+    box-shadow: 0 7px 13px 0 rgb(0 0 0 / 19%);
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.action-button:hover {
+    text-transform: uppercase;
+    background-image: linear-gradient(30deg, #fff, #fff);     /*===BUTTON BACKGROUND COLOR GRADIENT===*/
+    color: #fff;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-color: #fff;
+    border-radius:20px;
+    padding: 12px;
+    word-break: normal;
+    font-size: 13px;
+    min-width: 185px;
+    font-weight: 300;
+    letter-spacing: .7px;
+    box-shadow: 0 7px 13px 0 rgb(0 0 0 / 19%);
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.action-button > span {
+    color:#fff;
+    }
+
+.action-button:hover > span {
+    color:#000;
+    }
+/*============================*/
+
+/*===BOLT/NODE INFO BUTTONS===*/
+.btnGroupLnd {
+    background-image: linear-gradient(30deg, #fff, #fff);   /*===BUTTON BACKGROUND COLOR GRADIENT===*/
+    background-color:#fff;  /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+    border-color:#fff;  /*===BUTTON BORDER COLOR===*/
+    border-radius: 20px; /*===ROUNDED CORNER SETTINGS===*/
+action}
+
+.btnGroupLnd button {
+    background-image: linear-gradient(30deg,  #000, #000); /*===BUTTON BACKGROUND COLOR GRADIENT===*/
+    background-color:#fff;  /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+    border: 3px solid #fff; 
+    color:#fff;
+    border-radius: 20px; 
+}
+
+.btnGroupLnd button:hover {
+    background-image: linear-gradient(30deg,  #fff, #fff);/*===BUTTON BACKGROUND COLOR GRADIENT===*/
+    background-color:#fff;  /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+    border: 3px solid #fff;  
+    color:#000;
+    border-radius: 20px;
+}
+
+.btnGroupLnd button.active {
+    background-image: linear-gradient(30deg, #fff, #fff);   /*===BUTTON BACKGROUND COLOR GRADIENT===*/
+    background-color:#fff;   /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+    color:#000;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+
+.btnGroupLnd button.active:hover {
+    background-image: linear-gradient(30deg, #fff, #fff);   /*===BUTTON BACKGROUND COLOR GRADIENT===*/
+    background-color:#fff;   /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+    color:#000;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+
+.btnGroupLnd button:last-child {
+        border-radius: 20px;
+}
+
+.btnGroupLnd button:first-child {
+        border-radius: 20px;
+}
+/*===========================*/
+
+
+/*=======ORDER DETAILS=======*/
+.order-details {
+    border-left: 0px solid #666;
+    border-right:0px solid #666;
+    border-top: 0px solid #666;
+    border-radius: 20px;
+    background-color: none;
+}
+/*===========================*/
+
+
+/*===QR AND QR BACKGROUND===*/
+.payment-box {
+    height:425px; /*===SIZE IMPORTANT BECAUSE HEIGHT LIGHTNING QR CODE + OUTLINE===*/
+    background-image: linear-gradient(#000, #000);  /*===MENU BACKGROUND COLOR===*/
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.payment__scan {
+    width:276px;
+    height:276px;
+    margin-left:auto;   
+    margin-right:auto;
+    margin-bottom:5px;
+    margin-top:0px;
+    border: 0px solid #fff; /*===QR CODE BORDER SIZE/COLOR (LEAVE AS IS FOR QUICK SCANNING)===*/
+    border-radius: 0px;
+}
+
+.recommended-fee {
+    margin-top:10px;
+    padding-top:3px;
+    height:25px;
+}
+/*==========================*/
+
+/*======COLOR OF LINKS======*/
+a {
+    color: #fff;     /*===LINK COLOR===*/
+}
+
+a:hover {
+    color: #E0E0E0;     /*===LINK COLOR===*/
+}
+/*==========================*/
+
+/*==="COLOR OF SOME TEXTS===*/
+span {
+    color:#fff; /*===TEXT COLOR===*/
+}
+
+.timer-row__message > span {
+    color: #cc0000;
+
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.timer-row__time-left {
+    margin-right: 13px;
+    color: #cc0000;
+
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+
+.single-item-order__right__btc-price  > span {
+    color:#fff;
+}
+
+.single-item-order__right__ex-rate  > span {
+    color:#fff;
+}
+
+.line-items__item__value {
+    color:#fff;
+}
+
+.line-items__item__label {
+    color:#fff;
+}
+
+.line-items__item__label > span {
+    color:#fff;
+}
+
+.recommended-fee > span {
+    color:#fff;
+    font-size: small;
+}
+
+.copyAmountText.copy-cursor._copySpan {
+    color:#CC5F4C;
+}
+
+.copyAmountText.copy-cursor._copySpan > span {
+    color:#CC5F4C;
+}
+
+.form-text.small.text-muted > span {
+    color:#EF820D;
+    font-size:small;
+}
+/*=========================*/
+
+/*=====LANGUAGE SELECT=====*/
+#prettydropdown-DefaultLang ul {
+    color: #000; /* ===TEXT COLOR=== */
+    background-image: linear-gradient(30deg, #FFF, #FFF);     /*===BACKGROUND COLOR===*/
+    border: 3px solid #000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 0px #fff;    /*===OUTSIDE SHADOW===*/
+
+}
+
+#prettydropdown-DefaultLang:hover li ul {
+    color: #000; /* ===TEXT COLOR=== */
+    background-color: #fff;  /*===BACKGROUND COLOR===*/
+    border: 3px solid #000;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 0px #EF820D;    /*===OUTSIDE SHADOW===*/
+
+}
+
+.checked: {
+    color:#fff;
+}
+/*===========================*/
+
+/*====INSTRUCTIONAL TEXTS====*/
+.manual__step-one__header {
+    color: #fff; /*===TEXT COLOR===*/
+    opacity: 1;
+}
+.content-faded, .manual__step-one__instructions, .manual__step-two__instructions {
+    color: #fff; /*===TEXT COLOR===*/
+    opacity: 1;
+}
+
+.manual__step-two__instructions > span {
+    color: #fff; /*===TEXT COLOR===*/
+        opacity:1;
+}
+/*===========================*/
+
+/*====COPY INFO BOX/TEXTS====*/
+.copyBox {
+
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    background-position: center;
+    border: 3px solid #fff;
+    border-radius: 6px;
+}
+
+.copyAmountText {
+    color: #fff;    /*===TEXT COLOR===*/
+}
+
+.copySectionBox label {
+    color: #cc0000; /*===TEXT COLOR===*/
+    opacity: 1;
+}
+
+.separatorGem {
+    background:#fff; /*===GEM ICON COLOR===*/
+}
+
+.copySectionBox.bottomBorder{
+    border-bottom: 3px solid #fff;
+}
+
+.checkoutTextbox {
+    background-color:#fff;
+    border-radius: 20px;
+    border:0px solid #fff;
+}
+
+.copyLabelPopup.copied {
+    background: #cc0000;
+    color: #3e6ae1;
+
+}
+/*===========================*/
+
+/*====PAYMENT SUCCES / EXPIRED PAGE====*/
+/*
+.success-block {
+    background-image: linear-gradient(to top, #20a9e0, #fff); /*===GRADIENT BACKGROUND===*//*
+    height:275px;
+}
+*/
+.success-message {
+    color: #fff; /*  ===TEXT COLOR=== */
+}
+
+.expired__body {
+    color: #fff; /*  ===TEXT COLOR=== */  
+}
+
+.expired__text__bullet {
+    color: #fff; /*  ===TEXT COLOR=== */  
+}
+
+.expired .timer-row__message {
+    opacity: 1;
+    height: 27px;
+    border-top: 0px solid #666;
+    border-left: 0px solid #666;
+    border-right: 0px solid #666;
+    border-bottom:  0px solid #666;;
+    border-radius: 6px 6px 0px 0px;
+    margin-left:-15px;
+    margin-right:-60px;
+    padding-left: 40px;
+    padding-top: 7px;
+}
+/*===========================*/
+
+/*====FA ICONS====*/
+.fa.fa-angle-double-down{
+  Color:#cc0000;
+  opacity: .75;
+    margin-bottom: 3px;
+}
+
+.fa-angle-double-up {
+    Color:#cc0000;
+    opacity: .75;
+    margin-bottom: 3px;
+}
+/*===========================*/
+
+/*====POWERED BY BTCPAY SERVER====*/
+.powered__by__btcpayserver {
+    color: #cc0000;
+    font-size:12px;
+}
+
+.powered__by__btcpayserver > a {
+    color:#3e6ae1 !important;
+}
+
+.powered__by__btcpayserver > a:hover {
+    color:#010101 !important;
+}
+/*===========================*/
+
+
+/*==============================CREDITS=============================*/
+/*  Custom BTCpay Server CSS template made by @artdesignbySF        */
+/*  for Tesla at https://tesla.com                                 */
+/*  and @elonmusk on Twitter                                      */
+/*============================END CREDITS===========================*/
+
+/*============================DISCLAIMER============================*/
+/*  Might not be the most efficient or correct way of implementing  */
+/*  CSS. I am not responsable for breaking your website if things   */
+/*  go wrong. PEACE / LOVE / BITCOIN                                */
+/*==========================END DISCLAIMER==========================*/
